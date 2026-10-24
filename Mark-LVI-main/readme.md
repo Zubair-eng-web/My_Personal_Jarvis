@@ -635,7 +635,7 @@ It is held in memory only, deliberately: writing it to disk would make a fresh l
 ## ⚡ Quick Start
 
 ```bash
-git clone YOUR_REPOSITORY_URL Zubair
+git clone :   https://github.com/Zubair-eng-web/My_Personal_Jarvis
 cd Zubair
 python setup.py        # installs deps for YOUR OS + the browser automation engine
 python main.py
