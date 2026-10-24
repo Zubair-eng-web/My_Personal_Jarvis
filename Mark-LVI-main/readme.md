@@ -1,7 +1,7 @@
-# ⚙️ MARK LVI (56)
-### The Ultimate Cross-Platform Personal AI Assistant — By FatihMakes
+# ⚙️ ZUBAIR
+### The Ultimate Cross-Platform Personal AI Assistant — Made by Zubair
 
-> 📺 **[Watch the full setup video on YouTube](https://www.youtube.com/@FatihMakes)**
+> 🌍 **Created by Zubair** — built for people everywhere.
 
 A real-time voice AI that can hear, see, speak, and control your computer — on any OS. Supports Windows, macOS, and Linux. Built on the Gemini Live API for native audio streaming, delivering zero subscriptions and total digital autonomy.
 
@@ -9,11 +9,11 @@ A real-time voice AI that can hear, see, speak, and control your computer — on
 
 ## ✨ Overview
 
-Mark LV gave the assistant a screen. **Mark LVI lets you choose what runs it.**
+The earlier version gave the assistant a screen. **Zubair lets you choose what runs it.**
 
 Until now this was a Gemini assistant, and only that. If you had no quota left, no
 connection, or a rule that says your microphone does not leave the building, you
-had no assistant. Mark LVI adds a second way to hold the conversation — speech
+had no assistant. Zubair adds a second way to hold the conversation — speech
 recognition, a language model and a voice, assembled from parts you pick in
 ⚙ → **ENGINE & PROVIDERS** — and a way to point the assistant's own background
 requests at a different model without touching the voice at all.
@@ -32,7 +32,7 @@ inherits the avatar, the lip-sync, the self-echo guard, push-to-talk, the wake
 word, memory, undo, the confirmation gate and every action and plugin — because
 it enters through the same door the Live session always did.
 
-Mark LVI also changes what the assistant is allowed to CLAIM. Every tool that
+Zubair also changes what the assistant is allowed to CLAIM. Every tool that
 drives an application now answers with what it observed rather than with what it
 attempted: `done` means it was checked, `unverified` means the request went out
 and could not be confirmed — and the assistant says exactly that instead of
@@ -114,7 +114,7 @@ It's not just an assistant — it's an extension of your digital life.
 
 ---
 
-## 🆕 What's New in Mark LVI
+## 🆕 What's New in Zubair
 
 **Nothing new is installed by default.** Talking to a model — local or hosted — uses `httpx`, which already ships with `google-genai`. The system's own voices need no Python package at all. Local speech recognition (`faster-whisper`) and the neural voice (`piper-tts`) are one-click installs from inside the panel, and are deliberately absent from `requirements.txt`: a fresh clone that only ever uses Gemini should not download several hundred megabytes for a feature it will not open.
 
@@ -626,7 +626,7 @@ It is held in memory only, deliberately: writing it to disk would make a fresh l
 | **LIII** | Wake word · Gemini 3.1 Flash Live · instant acknowledgment · self-describing action/plugin architecture |
 | **LIV** | Holographic avatar · viseme lip-sync · facial acting · face-as-status · push-to-talk · self-echo guard · runtime self-knowledge & limits |
 | **LV** | Video on the HUD · model ladder with measured fallback · split settings drawers · trimmed bundled skill list |
-| **LVI** | Choose your engine · local & third-party models · Whisper + Piper in ~50 languages · language-following voice · ElevenLabs · tool budget for small models · verified outcomes instead of claimed ones · close an app by name · untrusted-content boundary · platform honesty on Wayland and macOS · hardened phone dashboard |
+| **Zubair** | Choose your engine · local & third-party models · Whisper + Piper in ~50 languages · language-following voice · ElevenLabs · tool budget for small models · verified outcomes instead of claimed ones · close an app by name · untrusted-content boundary · platform honesty on Wayland and macOS · hardened phone dashboard |
 | *shared* | The last five above also shipped to LIII, LIV and LV at the same time — moving up a Mark never loses them |
 | **LVII+** | Interrupt by voice · conversation history · full file access · security camera · Obsidian |
 
@@ -635,8 +635,8 @@ It is held in memory only, deliberately: writing it to disk would make a fresh l
 ## ⚡ Quick Start
 
 ```bash
-git clone https://github.com/FatihMakes/Mark-LVI.git
-cd Mark-LVI
+git clone YOUR_REPOSITORY_URL Zubair
+cd Zubair
 python setup.py        # installs deps for YOUR OS + the browser automation engine
 python main.py
 ```
@@ -670,7 +670,7 @@ python main.py
 ## 🗂️ Project Structure
 
 ```
-Mark LVI/
+Zubair/
 ├── main.py                   # Core loop — Gemini Live session, audio I/O, viseme extraction, tool dispatch
 ├── ui.py                     # PyQt6 HUD — avatar canvas, waveform, log panel, settings drawer, camera feed
 ├── setup.py                  # OS-aware installer (skips wrong-OS dependencies, checks your Python)
@@ -783,7 +783,7 @@ Mark LVI/
 
 | Asset | Source | Licence |
 | --- | --- | --- |
-| `core/face_model.obj` | [MediaPipe](https://github.com/google-ai-edge/mediapipe) canonical face model — 468 vertices of measured human face geometry | Apache License 2.0 |
+| `core/face_model.obj` | MediaPipe canonical face model — 468 vertices of measured human face geometry | Apache License 2.0 |
 
 ---
 
@@ -797,27 +797,15 @@ Everything stays on your machine. There is no MARK server, no telemetry and no a
 | Dashboard TLS certificate + private key | `config/certs/` | Generated locally, self-signed, never leaves the machine. |
 | What the assistant remembers about you | `memory/long_term.json` | Delete the file to make it forget everything. |
 
-All three are listed in `.gitignore`, so a fork or a pull request cannot leak them by accident. **If you have already committed `config/api_keys.json` anywhere public, revoke that key** at [aistudio.google.com](https://aistudio.google.com/app/apikey) and generate a new one — removing the file in a later commit does not remove it from the history.
+All three are listed in `.gitignore`, so a fork or a pull request cannot leak them by accident. **If you have already committed `config/api_keys.json` anywhere public, revoke that key** through Google AI Studio and generate a new one — removing the file in a later commit does not remove it from the history.
 
 Your voice is streamed to Google's Gemini Live API while a session is open; that is the one thing that leaves your computer, and it stops when you mute or close the app.
 
-**Mark LVI changes what that sentence can say about you.** Choose a local engine — Whisper on your CPU, a model served by Ollama or LM Studio, your system's own voice — and nothing leaves the machine at all: no audio, no transcript, no key, no account. Choose a hosted provider instead and your audio and text go to that vendor rather than to Google. The panel says which is which, and the assistant never quietly switches between them.
+**Zubair changes what that sentence can say about you.** Choose a local engine — Whisper on your CPU, a model served by Ollama or LM Studio, your system's own voice — and nothing leaves the machine at all: no audio, no transcript, no key, no account. Choose a hosted provider instead and your audio and text go to that vendor rather than to Google. The panel says which is which, and the assistant never quietly switches between them.
 
 ---
 
-## ⚠️ License
+## 👤 About the Creator
 
-Personal and non-commercial use only.
-Licensed under **[Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**.
-
----
-
-## 👤 Connect with the Creator
-
-Engineered by a developer building a real-world JARVIS-style assistant.
-⭐ **Star the repository to support the journey to Mark 100.**
-
-| Platform | Link |
-| --- | --- |
-| YouTube | [@FatihMakes](https://www.youtube.com/@FatihMakes) |
-| Instagram | [@fatihmakes](https://www.instagram.com/fatihmakes) |
+Made with ❤️ by **Zubair**.
+Built to bring useful AI tools to people around the world.
